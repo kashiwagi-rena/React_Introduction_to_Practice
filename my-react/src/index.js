@@ -7,12 +7,23 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const title = 'これからはじめるVue.js 3実践入門';
 root.render(
-    <div className="main">
-      <p>「{title}」 (SBクリエイティブ刊)</p>
-      <img src="http://wings.msn.to/books/978-4-8156-1336-5/978-4-8156-1336-5.jpg"
-        alt={title} />
-        絶賛発売中！
-    </div>
+  React.createElement(
+    'div',
+    { className: 'main' },
+    React.createElement(
+      'p',
+      null,
+      `「${title}」 (SBクリエイティブ刊)`
+    ),
+    React.createElement(
+      'img',
+      {
+        src: 'http://wings.msn.to/books/978-4-8156-1336-5/978-4-8156-1336-5.jpg',
+        alt: title
+      }
+    ),
+    '絶賛発売中！'
+  )
   );
 
 // If you want to start measuring performance in your app, pass a function
