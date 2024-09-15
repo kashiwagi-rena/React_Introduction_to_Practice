@@ -5,9 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const name = '鈴木';
+const title = 'これからはじめるVue.js 3実践入門';
 root.render(
-  <p>こんにちは、{name}です！</p>
+    <div className="main">
+      <p>「{title}」 (SBクリエイティブ刊)</p>
+      <img src="http://wings.msn.to/books/978-4-8156-1336-5/978-4-8156-1336-5.jpg"
+        alt={title} />
+        絶賛発売中！
+    </div>
   );
 
 // If you want to start measuring performance in your app, pass a function
