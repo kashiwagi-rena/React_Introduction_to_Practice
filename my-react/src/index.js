@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EventBasic from './chap03/EventBasic';
+import StateBasic from './chap03/StateBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <EventBasic type="time" />
+    <StateBasic init={0}/>
     );
 });
 
