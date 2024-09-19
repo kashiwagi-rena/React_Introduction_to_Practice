@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyHello from './chap03/MyHello';
+import EventBasic from './chap03/EventBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <MyHello myName="鈴木" />
+    <EventBasic type="time" />
     );
 });
 
