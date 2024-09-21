@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StateBasic from './chap03/StateBasic';
+import books from './chap03/books';
+import ForList from './chap03/ForList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <StateBasic init={0}/>
+      <ForList src={books} />
     );
 });
 
