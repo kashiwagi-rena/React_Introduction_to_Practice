@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SelectStyle from './chap03/SelectStyle';
+import StyledPanel from './chap03/StyledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <SelectStyle mode="dark" />
+      <StyledPanel>
+        <p>メンバー募集中！</p>
+        <p>ようこそ、WINGSプロジェクトへ！！</p>
+      </StyledPanel>
     );
 });
 
