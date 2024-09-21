@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StyledPanel from './chap03/StyledPanel';
+import TitledPanel from './chap03/TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <StyledPanel>
-        <p>メンバー募集中！</p>
-        <p>ようこそ、WINGSプロジェクトへ！！</p>
-      </StyledPanel>
+      <TitledPanel
+        title={
+          <p>メンバー募集中！</p>
+          }
+        body={
+          <p>ようこそ、WINGSプロジェクトへ！！</p>
+          }>
+      </TitledPanel>
     );
 });
 
