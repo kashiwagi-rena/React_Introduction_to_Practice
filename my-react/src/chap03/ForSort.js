@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function ForList({ src }) {
-  const lowPrice = books.filter(src => book.price < 3500);
+export default function ForSort({ src }) {
+  src.sort((m, n) => m.price - n.price);
   return (
     <dl>
       {
-        lowPrice.map(elem => (
+        src.map(elem => (
           <React.Fragment key={elem.isbn}>
             <dt>
               <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>

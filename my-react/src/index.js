@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import books from './chap03/books';
-import ForList from './chap03/ForList';
+import ForSort from './chap03/ForSort';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <ForList src={books} />
+      <ForSort src={books} />
     );
 });
 
