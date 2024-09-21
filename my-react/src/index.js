@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import books from './chap03/books';
-import ForItem from './chap03/ForItem';
+import SelectStyle from './chap03/SelectStyle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <ForItem src={book} />
+      <SelectStyle mode="dark" />
     );
 });
 
