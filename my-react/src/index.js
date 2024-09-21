@@ -6,16 +6,11 @@ import TitledPanel from './chap03/TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
+  const title= <p>メンバー募集中！</p>;
+  const body=<p>ようこそ、WINGSプロジェクトへ！！</p>;
   root.render(
-      <TitledPanel
-        title={
-          <p>メンバー募集中！</p>
-          }
-        body={
-          <p>ようこそ、WINGSプロジェクトへ！！</p>
-          }>
-      </TitledPanel>
-    );
+      <TitledPanel title={title} body={body}></TitledPanel>
+  );
 });
 
 // If you want to start measuring performance in your app, pass a function
