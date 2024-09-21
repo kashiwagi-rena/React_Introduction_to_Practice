@@ -10,7 +10,8 @@ export default function ForItem({ book }) {
       </dt>
       <dd>
         {book.summary}
-        {book.download && <Download isbn={book.isbn} />}
+        {book.download || '×'}
+        {/* {book.download && <Download isbn={book.isbn} />} */}
       </dd>
     </>
   );
