@@ -9,12 +9,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
     <ListTemplate src={books}>
-      <dt>
-        <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
-          {elem.title} ({elem.price}円)
-        </a>
-      </dt>
-      <dd>{elem.summary}</dd>
+    {elem => (
+      <>
+        <dt>
+          <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
+            {elem.title} ({elem.price}円)
+          </a>
+        </dt>
+        <dd>{elem.summary}</dd>
+      </>
+    )}
     </ListTemplate>
   );
 });
