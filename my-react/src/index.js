@@ -8,8 +8,7 @@ import ListTemplate from './chap03/ListTemplate';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <ListTemplate src={books}>
-    {elem => (
+    <ListTemplate src={books} render={elem => (
       <>
         <dt>
           <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
@@ -18,8 +17,7 @@ setInterval(() => {
         </dt>
         <dd>{elem.summary}</dd>
       </>
-    )}
-    </ListTemplate>
+    )}/>
   );
 });
 
