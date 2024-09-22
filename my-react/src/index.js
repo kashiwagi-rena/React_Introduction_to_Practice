@@ -2,15 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import TitledPanel from './chap03/TitledPanel';
+import books from './chap03/books';
+import ListTemplate from './chap03/ListTemplate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <TitledPanel>
-        <p key="title">メンバー募集中！</p>
-        <p key="body">ようこそ、WINGSプロジェクトへ！！</p>
-      </TitledPanel>
+    <ListTemplate src={books}>
+      <dt>
+        <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
+          {elem.title} ({elem.price}円)
+        </a>
+      </dt>
+      <dd>{elem.summary}</dd>
+    </ListTemplate>
   );
 });
 
