@@ -2,22 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import books from './chap03/books';
-import ListTemplate from './chap03/ListTemplate';
+import StateParent from './chap03/StateParent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <ListTemplate src={books} render={elem => (
-      <>
-        <dt>
-          <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
-            {elem.title} ({elem.price}円)
-          </a>
-        </dt>
-        <dd>{elem.summary}</dd>
-      </>
-    )}/>
+    <StateParent />
   );
 });
 
