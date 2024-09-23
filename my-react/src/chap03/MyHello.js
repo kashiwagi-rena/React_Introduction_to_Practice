@@ -1,5 +1,7 @@
-export default function MyHello({ myName = '権兵衛'}) {
-  return (
-    <div>こんにちは、{myName}さん！</div>
-  );
+import PropTypes from 'prop-types';
+// p122~p128のPropTypesを飛ばす
+
+function MyHello(props) {
+  return
+  <></>
 }

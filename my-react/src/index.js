@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SelectStyle from './chap03/SelectStyle';
+import StateParent from './chap03/StateParent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-      <SelectStyle mode="dark" />
-    );
+    <StateParent />
+  );
 });
 
 // If you want to start measuring performance in your app, pass a function
